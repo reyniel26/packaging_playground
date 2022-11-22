@@ -10,3 +10,8 @@ py -m pip install --upgrade build
 ```
 py -m build
 ```
+
+RUN ON BASH
+```
+pylint $(git ls-files '*.py')
+```
