@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "example_package_reyniel26"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
   { name="Reyniel Mark Escamillas", email="some@email.com" },
 ]
@@ -33,14 +33,14 @@ tests = [
 "Homepage" = "https://github.com/reyniel26/packaging_playground"
 "Bug Tracker" = "https://github.com/reyniel26/packaging_playground/issues"
 
-# [tool.setuptools]
-# # ...
-# # By default, include-package-data is true in pyproject.toml, so you do
-# # NOT have to specify this line.
-# include-package-data = true
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
 
-# [tool.setuptools.packages.find]
-# where = ["src"]
+[tool.setuptools.packages.find]
+where = ["src"]
 
-# [tool.setuptools.package-data]
-# example_package_reyniel26 = ["*.txt"]
+[tool.setuptools.package-data]
+example_package_reyniel26 = ["*.txt"]
